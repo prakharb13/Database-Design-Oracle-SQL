@@ -8,6 +8,7 @@ Entity Relationship Diagram of the database is shown below:
 1. Assign primary and foreign keys per the design.
 2. Only the following can be NULL: Address_line_2 since it’s not required. Customers’ birthdates since it’s not always known. The reservation Checkout Date, Discount Code, Customer Rating, and Notes are also not required since they are allowed to be blank when the reservation is created. 
 3. The following fields should be UNIQUE: Customer email, Feature Name, Location Name, Reservation, and Confirmation Number. 
+
 DEFAULTS:
   1. Stay credits earned and used should be set initially to 0 (zero).
   2. The reservation Date_Created should default to the current date using the SYSDATE function. 
